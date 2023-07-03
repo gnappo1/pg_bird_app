@@ -24,12 +24,3 @@ class Birds(Resource):
         return make_response(jsonify(birds), 200)
 
 api.add_resource(Birds, '/birds')
-
-#!PGPASSWORD= 
-# PGPASSWORD=****
-#! psql -host (hostname or IP address of the PostgreSQL server)
-# psql -h dpg-****-a.oregon-postgres.render.com
-#! -U username
-# -U piccinius
-#! database name
-# bird_app_7hxo
